@@ -13,7 +13,9 @@ const valorMaximo = 2;
 // Inicia Loop que actua por en base al prompt
 
 while (seleccion !== "esc") {
+  // Busca un numero entero entre el 0 y el 2 con las funciones Math.floor y Math.Random esta las use un par de veces en mi carrera
     const respuesta = Math.floor(Math.random() * (valorMaximo - valorMinimo + 1)) + valorMinimo;
+    // crea un switch el cual crea una respuesta aleatoria a mi seleccion y en caso de ser ganador o perdedor tira distintos mensajes
     switch (seleccion.toLowerCase()) {
         case "piedra":
             if (respuesta === 0) {
