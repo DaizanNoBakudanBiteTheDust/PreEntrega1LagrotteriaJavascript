@@ -1,5 +1,8 @@
 // Codigo Papel Tijeras creado por Gabriel Lagrotteria para el curso de Javascript de CoderHouse
 
+//Meto todo en una Funcion
+
+function jugarPiedraPapelTijera(){
 let seleccion = prompt("Ingrese Piedra, Papel o Tijeras");
 
 // Defino valores que quiero que recorra como respuesta a mi seleccion
@@ -41,6 +44,7 @@ while (seleccion !== "esc") {
             break;
         default:
             alert("No ha habido seleccion");
+            seleccion = prompt("Ingrese Piedra, Papel o Tijeras");
             break;
     }
 
@@ -55,3 +59,8 @@ while (seleccion !== "esc") {
         } 
         seleccion = prompt("Ingrese Piedra, Papel o Tijeras");
 }
+}
+
+// Llamo a la funcion
+
+jugarPiedraPapelTijera();
